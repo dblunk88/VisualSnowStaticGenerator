@@ -11,7 +11,7 @@ class Animations:
     def inflate_deflate(self,canvas,pygame):
         active_pixels = self.active_pixels
         for counter in range(randint(settings.pixel_creation_min,settings.pixel_creation_max)):
-            self.active_pixels.append([randint(0,canvas.screen_width),  # x
+            active_pixels.append([randint(0,canvas.screen_width),  # x
                                        randint(0,canvas.screen_height),  # y
                                        0,  # starting width
                                        circle_colors.random(),  # color
