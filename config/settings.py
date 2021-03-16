@@ -33,5 +33,3 @@ circle_color = [colors.WHITE,colors.BLACK]
 circle_min = 10
 circle_max = 20
 random_color_chance = 1
-
-
