@@ -27,7 +27,10 @@ def run():
         # populate.entire_screen(canvas,pygame)
 
         # Animate: Inflate Deflate
-        animate.inflate_deflate(canvas,pygame)
+        # animate.inflate_deflate(canvas,pygame)
+
+        # Animate: Come and go
+        animate.come_and_go(canvas,pygame)
 
         # Update Screen
         screen.update(canvas,pygame)

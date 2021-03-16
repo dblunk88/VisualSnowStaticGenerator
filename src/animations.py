@@ -1,6 +1,7 @@
 from random import randint
 
 from config import settings
+from config import colors
 from src import circle_colors
 
 
@@ -37,3 +38,9 @@ class Animations:
                 pygame.draw.circle(surface=canvas.screen,color=color,center=(x,y),
                                    radius=width)
         self.active_pixels = updated_active_pixels
+
+    def come_and_go(self,canvas,pygame):
+        for x in range(0,randint(2500,3000)):
+            pygame.draw.circle(surface=canvas.screen,color=colors.WHITE,center=(randint(0,canvas.screen_width),
+                                                                                randint(0,canvas.screen_height)),
+                               radius=randint(5,10))

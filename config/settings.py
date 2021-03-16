@@ -2,7 +2,7 @@ from config import colors
 
 # Display Settings
 screen_fps_limit = True
-screen_fps = 24
+screen_fps = 60
 
 # Screenshot Settings
 screenshot_pics = True
@@ -11,7 +11,7 @@ image_format = "png"
 screenshot_frames = 14400
 screen_width = 1920
 screen_height = 1080
-fps = 24
+fps = 60
 prepopulate_frames = 50
 
 # TODO: Eventually break this up into individual settings for different methods
