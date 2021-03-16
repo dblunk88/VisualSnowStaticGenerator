@@ -6,7 +6,7 @@ from config import settings
 from src import animations
 from src import capture
 from src import screen
-from src import setup
+from src import canvas_setup
 from src import user_events
 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
@@ -16,7 +16,7 @@ def run():
     if settings.screen_fps_limit:
         clock = pygame.time.Clock()
     done = False
-    canvas = setup.Setup()
+    canvas = canvas_setup.Setup()
     animate = animations.Animations()
     while not done:
         canvas.screen.fill(settings.colors.BLACK)
