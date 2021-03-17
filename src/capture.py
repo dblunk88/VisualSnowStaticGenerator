@@ -1,6 +1,7 @@
 import sys
 
 from config import settings
+from src import screenshots_to_mp4
 
 
 def screenshot(canvas,pygame):
@@ -21,4 +22,4 @@ def screenshot(canvas,pygame):
         canvas.iterator_counter = canvas.iterator_counter + 1
     elif canvas.iterator_counter >= canvas.screenshot_frames:
         pygame.quit()
-        exit(0)
+        screenshots_to_mp4.convert()

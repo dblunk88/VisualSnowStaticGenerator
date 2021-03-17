@@ -1,15 +1,15 @@
 from config import colors
 
 # Display Settings
-screen_fps_limit = True
-screen_fps = 60
+screen_fps_limit = False
+screen_fps = 24
 
 # Screenshot Settings
 screenshot_pics = True
 screenshots_directory = "E:\\screenshots"
 image_format = "png"
 screenshot_frames = 14400
-screen_width = 1920
+screen_width = 19200
 screen_height = 1080
 fps = 60
 prepopulate_frames = 50

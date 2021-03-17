@@ -17,7 +17,7 @@ def run():
         clock = pygame.time.Clock()
     done = False
     canvas = canvas_setup.Setup()
-    animate = animations.Animations()
+    animate = animations.Animations(canvas, pygame)
     while not done:
         canvas.screen.fill(settings.colors.BLACK)
         # Checking if the user did something
@@ -30,7 +30,10 @@ def run():
         # animate.inflate_deflate(canvas,pygame)
 
         # Animate: Come and go
-        animate.come_and_go(canvas,pygame)
+        # animate.come_and_go()
+
+        # Animate: Move around
+        animate.move_around()
 
         # Update Screen
         screen.update(canvas,pygame)
