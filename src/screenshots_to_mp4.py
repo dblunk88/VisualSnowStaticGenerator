@@ -6,6 +6,7 @@ from config import settings
 def convert():
     chdir(settings.screenshots_directory)
     print(getcwd())
+    # Needs to have ffmpeg installed
     cmd = "ffmpeg -r {} -f image2 -s 1920x1080 -i %d.png -vcodec libx264 -crf 15 static.mp4 -y".format(
         settings.fps
     )
