@@ -1,23 +1,23 @@
 from config import colors
 
 # Display Settings
-screen_fps_limit = False
-screen_fps = 24
+screen_fps_limit = True
+screen_fps = 60
 
 # Screenshot Settings
 screenshot_pics = True
 screenshots_directory = "E:\\screenshots"
 image_format = "png"
 screenshot_frames = 14400
-screen_width = 19200
-screen_height = 1080
-fps = 60
+screen_width = 4320
+screen_height = 2160
+fps = 24
 prepopulate_frames = 50
 
 # TODO: Eventually break this up into individual settings for different methods
 # Method: Inflate - Deflate
-pixel_creation_min = 0
-pixel_creation_max = 250
+pixel_creation_min = 10
+pixel_creation_max = 100
 max_pixel_width_min = 15
 max_pixel_width_max = 25
 

@@ -26,14 +26,19 @@ def run():
         # Populating screen
         # populate.entire_screen(canvas,pygame)
 
-        # Animate: Inflate Deflate
-        # animate.inflate_deflate(canvas,pygame)
+
 
         # Animate: Come and go
         # animate.come_and_go()
 
+        # Animate: Inflate Deflate
+        # animate.inflate_deflate()
+
         # Animate: Move around
-        animate.move_around()
+        # animate.move_around()
+
+        # Animate: VR Static
+        animate.VR_Static()
 
         # Update Screen
         screen.update(canvas,pygame)
@@ -42,6 +47,7 @@ def run():
 
         # Take screenshots if in screenshot mode
         if settings.screenshot_pics:
+            # TODO: break loop once video conversion starts
             capture.screenshot(canvas,pygame)
     pygame.quit()
 
