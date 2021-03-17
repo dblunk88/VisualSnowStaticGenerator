@@ -22,4 +22,5 @@ def screenshot(canvas,pygame):
         canvas.iterator_counter = canvas.iterator_counter + 1
     elif canvas.iterator_counter >= canvas.screenshot_frames:
         pygame.quit()
+        # TODO: Add option to settings to either convert to mp4 or to a gif (or both/none)
         screenshots_to_mp4.convert()
